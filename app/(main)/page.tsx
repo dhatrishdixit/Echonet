@@ -1,10 +1,11 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
 
 export default function Home() {
   return (
-   <div className="text-orange-500">
+   <div className="text-white flex flex-col">
         <UserButton/>
+        <ModeToggle/>
    </div>
   );
 }
